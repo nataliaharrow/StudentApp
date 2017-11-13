@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nataliaharrow.studentapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="390dp"
+        android:layout_height="700dp"
+        app:srcCompat="@drawable/people"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="266dp"
+        android:layout_height="52dp"
+        android:text="Welcome to Your Personal Assistant App"
+        android:textColor="#342977"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="70dp"
+        tools:text="@string/welcome" />
+
+</android.support.constraint.ConstraintLayout>
