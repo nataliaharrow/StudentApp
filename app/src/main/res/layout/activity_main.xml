@@ -87,13 +87,3 @@
 
 </android.support.constraint.ConstraintLayout>
 
-
-    <!--<TextView
-    android:id="@+id/textView2"
-    android:layout_width="266dp"
-    android:layout_height="52dp"
-    android:textColor="#342977"
-    android:textSize="25dp"
-    tools:layout_editor_absoluteX="59dp"
-    tools:layout_editor_absoluteY="68dp"
-    tools:text="@string/welcome" />-->
