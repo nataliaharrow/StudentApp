@@ -8,16 +8,21 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    //Submit = (Button)findViewById(R.id.Submit);
+    //Submit = (Button)loginDialog.findViewById(R.id.Submit);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button buttonCalendar = (Button) findViewById(R.id.btn_calendar);
+        Button buttonCalendar = (Button)findViewById(R.id.btn_calendar);
         buttonCalendar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), ActivityCalendar.class);
+                //
+                Intent intent = new Intent(MainActivity.this, ActivityCalendar.class);
                 startActivity(intent);
             }
         });
@@ -26,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         buttonToDoList.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), ActivityToDoList.class);
+                Intent intent = new Intent(MainActivity.this, ActivityToDoList.class);
                 startActivity(intent);
             }
         });
@@ -35,11 +40,15 @@ public class MainActivity extends AppCompatActivity {
         buttonStudyQuestions.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), ActivityStudyQuestions.class);
+                Intent intent = new Intent(MainActivity.this, ActivityStudyQuestions.class);
                 startActivity(intent);
             }
         });
-
-
     }
 }
+
+/*
+* Intent intent = new Intent(getApplicationContext(), ActivityCalendar.class);
+                startActivity(intent);*/
+
+//207266049935-2u21cu28rd7femvbbrh5h8fkvpg0mi1r.apps.googleusercontent.com
