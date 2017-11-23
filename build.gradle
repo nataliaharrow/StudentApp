@@ -2,27 +2,28 @@
 
 buildscript {
     repositories {
-          mavenCentral()
-        //  google()
+         // mavenCentral()
+          //google()
         jcenter()
+        google()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.0'
         classpath 'com.google.gms:google-services:3.0.0'
-        classpath 'com.google.gms:google-services:3.1.1'
-        // classpath 'com.android.tools.build:gradle:1.1.1'
-        //apply plugin: 'com.google.gms.google-services'
+     //   classpath 'com.google.gms:google-services:3.1.1'
+        //classpath 'com.android.tools.build:gradle:1.1.1'
 
     }
 }
     allprojects {
         repositories {
-            mavenCentral()
+         //   mavenCentral()
             //google()
             jcenter()
-            maven {
+           /* maven {
                 url 'https://maven.google.com'
-            }
+            }*/
+            google()
         }
     }
     ext {

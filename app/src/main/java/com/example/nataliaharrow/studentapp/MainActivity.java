@@ -8,16 +8,12 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-
-    //Submit = (Button)findViewById(R.id.Submit);
-    //Submit = (Button)loginDialog.findViewById(R.id.Submit);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button buttonCalendar = (Button)findViewById(R.id.btn_calendar);
+        Button buttonCalendar = (Button)findViewById(R.id.buttonCalendar);
         buttonCalendar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -26,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+/*
         Button buttonToDoList = (Button) findViewById(R.id.btn_todolist);
         buttonToDoList.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -34,16 +30,16 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, ActivityToDoList.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
-        Button buttonStudyQuestions = (Button) findViewById(R.id.btn_studyquestions);
+       /* Button buttonStudyQuestions = (Button) findViewById(R.id.btn_studyquestions);
         buttonStudyQuestions.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(MainActivity.this, ActivityStudyQuestions.class);
                 startActivity(intent);
             }
-        });
+        });*/
     }
 }
 
