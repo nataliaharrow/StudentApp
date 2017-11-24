@@ -4,4 +4,6 @@
     <item name="btn_calendar" type="id" />
     <item name="btn_todolist" type="id" />
     <item name="btn_studyquestions" type="id" />
+    <item name="buttonToDoList" type="id" />
+    <item name="buttonStudyQuestions" type="id" />
 </resources>

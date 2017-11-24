@@ -22,17 +22,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-/*
-        Button buttonToDoList = (Button) findViewById(R.id.btn_todolist);
+
+        Button buttonToDoList = (Button)findViewById(R.id.buttonToDoList);
         buttonToDoList.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(MainActivity.this, ActivityToDoList.class);
                 startActivity(intent);
             }
-        });*/
+        });
 
-       /* Button buttonStudyQuestions = (Button) findViewById(R.id.btn_studyquestions);
+     /*  Button buttonStudyQuestions = (Button) findViewById(R.id.buttonStudyQuestions);
         buttonStudyQuestions.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){

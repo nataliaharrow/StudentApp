@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9575CD"
+    android:background="#90CAF9"
     tools:layout_editor_absoluteY="81dp">
 
 
@@ -27,13 +27,39 @@
         android:layout_marginBottom="251dp"
         android:layout_marginEnd="41dp"
         android:layout_marginStart="41dp"
-        android:backgroundTint="@android:color/transparent"
+
+        android:background="#42A5F5"
         android:text="Calendar"
+        android:textColor="#0D47A1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <Button
+        android:id="@+id/buttonToDoList"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="48dp"
+        android:background="#42A5F5"
+        android:text="To Do List"
+        android:textColor="#0D47A1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalendar" />
 
 </android.support.constraint.ConstraintLayout>
 
