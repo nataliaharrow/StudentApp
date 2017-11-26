@@ -11,24 +11,25 @@
 
     <CalendarView
         android:id="@+id/calendarView"
-        android:layout_width="343dp"
-        android:layout_height="341dp"
-        android:layout_marginBottom="38dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="39dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
         android:background="#FFF"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/editText"
-        android:layout_width="367dp"
-        android:layout_height="30dp"
-        android:layout_marginBottom="32dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="54dp"
+        android:id="@+id/textView"
+        android:layout_width="364dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="29dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Add an event by clicking on a date"
@@ -42,14 +43,13 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="171dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="55dp"
+        android:layout_width="224dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="16dp"
         android:text="Add"
         android:textColor="#0D47A1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calendarView" />
 
