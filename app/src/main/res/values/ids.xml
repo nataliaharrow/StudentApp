@@ -6,4 +6,5 @@
     <item name="btn_studyquestions" type="id" />
     <item name="buttonToDoList" type="id" />
     <item name="buttonStudyQuestions" type="id" />
+    <item name="buttonCalendarAPI" type="id" />
 </resources>

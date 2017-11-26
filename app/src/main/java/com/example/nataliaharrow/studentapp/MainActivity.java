@@ -32,14 +32,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-     /*  Button buttonStudyQuestions = (Button) findViewById(R.id.buttonStudyQuestions);
+       Button buttonStudyQuestions = (Button) findViewById(R.id.buttonCalendarAPI);
         buttonStudyQuestions.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(MainActivity.this, ActivityStudyQuestions.class);
+                Intent intent = new Intent(MainActivity.this, ActivityCalendarAPI.class);
                 startActivity(intent);
             }
-        });*/
+        });
     }
 }
 
