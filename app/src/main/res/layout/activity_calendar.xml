@@ -4,13 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.nataliaharrow.studentapp.ActivityCalendar">
+    android:background="#2196F3"
+    tools:context="com.example.nataliaharrow.studentapp.ActivityCalendar"
+    tools:layout_editor_absoluteY="25dp">
+
 
     <CalendarView
         android:id="@+id/calendarView"
-        android:layout_width="0dp"
-        android:layout_height="331dp"
+        android:layout_width="343dp"
+        android:layout_height="341dp"
+        android:layout_marginBottom="38dp"
+        android:layout_marginTop="40dp"
+        android:background="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="367dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Add an event by clicking on a date"
+        android:textAlignment="center"
+        android:textColor="#E3F2FD"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/calendarView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="171dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="55dp"
+        android:text="Add"
+        android:textColor="#0D47A1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
 </android.support.constraint.ConstraintLayout>

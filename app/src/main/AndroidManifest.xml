@@ -2,9 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.nataliaharrow.studentapp">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-sdk
+        android:maxSdkVersion="integer"
+        android:minSdkVersion="11"
+        android:targetSdkVersion="integer" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,10 +24,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-
-
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:label="Google Calendar API Android Quickstart">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,20 +35,12 @@
         </activity>
         <activity android:name=".ActivityCalendar" />
         <activity android:name=".ActivityToDoList" />
-        <activity android:name=".ActivityStudyQuestions"></activity>
+        <activity android:name=".ActivityStudyQuestions" />
 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
     </application>
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-
-    <uses-sdk android:minSdkVersion="11"
-        android:targetSdkVersion="integer"
-        android:maxSdkVersion="integer" />
 
 </manifest>
