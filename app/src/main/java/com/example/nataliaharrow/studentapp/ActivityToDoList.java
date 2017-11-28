@@ -21,7 +21,7 @@ public class ActivityToDoList extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_to_do_list);
         listView = (ListView) findViewById(R.id.listView);
         arrayList = new ArrayList<>();
         arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayList);
