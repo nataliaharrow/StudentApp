@@ -40,7 +40,7 @@ public class ActivityToDoList extends AppCompatActivity {
 
     public void onClick(View v){
         Intent intent = new Intent();
-        intent.setClass(MainActivity.this, EditFieldClass.class);
+        intent.setClass(ActivityToDoList.this, EditFieldClass.class);
         startActivityForResult(intent, IntentConstants.INTENT_REQUEST_CODE);
     }
 
